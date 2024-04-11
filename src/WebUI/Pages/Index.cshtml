@@ -1,0 +1,35 @@
+@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@functions
+{
+    double Perimetro;
+    double Area;
+    double Volumen;
+
+    public void OnPost(double lado, double diagonalMayor, double diagonalMenor, double altura)
+    {
+        Perimetro = Application.Rombo.Perimetro(lado);
+        Area = Application.Rombo.Area(diagonalMayor, diagonalMenor); // Utiliza ambas diagonales proporcionadas por el usuario
+        Volumen = Application.PrismaCuadrangular.Volumen(Area, altura);
+    }
+}
+
+<h1>
+    Calculadora de Área, Perímetro, Volumen del Rombo y su Prisma Cuadrangular Asociado
+</h1>
+
+<form method="Post">
+    Dame el lado del rombo: <input type="number" name="lado">
+    <br>
+    Dame la diagonal mayor del rombo: <input type="number" name="diagonalMayor">
+    <br>
+    Dame la diagonal menor del rombo: <input type="number" name="diagonalMenor">
+    <br>
+    Dame la altura del prisma cuadrangular: <input type="number" name="altura">
+    <br>
+    <button>Calcular</button>
+</form>
+
+<p>
+    Área del Rombo: @(Area) cm²<br>Perímetro del Rombo: @(Perimetro) cm<br>Volumen del Prisma Cuadrangular: @(Volumen) cm³
+</p>
