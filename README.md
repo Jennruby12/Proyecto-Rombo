@@ -1,20 +1,25 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Rhombus Project 
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Description
+This project is developed in C# and aims to calculate the area of a rhombus. The application allows the user to input the lengths of the diagonals of the rhombus, and it calculates the area based on the mathematical formula:
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+\[
+Area = \frac{d_1 \times d_2}{2}
+\]
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Where:
+- \(d_1\) is the length of the first diagonal.
+- \(d_2\) is the length of the second diagonal.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+This project demonstrates basic C# programming concepts, such as working with variables, user input, and performing mathematical operations. It uses object-oriented programming (OOP) principles and is designed to be simple and easy to understand.
+
+### Technologies Used:
+- **Language**: C#
+- **Platform**: .NET (Core or Framework depending on your version)
+- **IDE**: Visual Studio
+- **Version Control**: Git, GitHub
+
+## Installation
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/Jennruby12/Proyecto-Rombo.git
